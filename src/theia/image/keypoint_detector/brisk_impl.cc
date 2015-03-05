@@ -467,7 +467,7 @@ inline float BriskScaleSpace::refine3D(const uint8_t layer, const int x_layer,
   const int center = thisLayer.getAgastScore(x_layer, y_layer, 1);
 
   // check and get above maximum:
-  float delta_x_above, delta_y_above;
+  float delta_x_above = 0.f, delta_y_above = 0.f;
   float max_above = getScoreMaxAbove(layer, x_layer, y_layer, center, ismax,
                                      delta_x_above, delta_y_above);
 
