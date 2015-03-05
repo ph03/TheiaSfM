@@ -58,7 +58,7 @@ void LoadSensorWidthDatabase(SensorWidthDatabase* sensor_width_database) {
 }
 
 int main(int argc, char *argv[]) {
-  google::ParseCommandLineFlags(&argc, &argv, true);
+  gflags::ParseCommandLineFlags(&argc, &argv, true);
   google::InitGoogleLogging(argv[0]);
 
   SensorWidthDatabase sensor_width_database;
